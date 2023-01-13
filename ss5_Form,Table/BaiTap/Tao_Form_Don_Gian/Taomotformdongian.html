@@ -7,25 +7,54 @@
 <body>
 <h2 style="background-color: orange;color: aliceblue;text-align: center ; width: 450px">Sở Thích Của Bạn</h2>
 <form>
-<table class="bang">
+<table class="bang" >
              <tr>
                  <td class="info">Họ và Tên</td>
                  <th style="text-align: left"><input type="text"name="hovaten" size="30px" style="margin-right: 43px"></th>
+
              </tr>
              <tr>
-                 <td class="info">Email</td>
+                 <td  class="info">Email</td>
                  <td><input type="email"name="email" size="20px"></td>
+
              </tr>
              <tr>
-                 <td class="info">Sở thích</td>
-                 <th class="hobbies">
-                     <input type="checkbox"name="hobbies" >Thể Thao
-                     <input type="checkbox"name="hobbies" >Âm Nhạc
-                     <input type="checkbox"name="hobbies"checked>Đọc Sách<br>
-                     <input type="checkbox"name="hobbies">Lướt Web
-                     <input type="checkbox"name="hobbies">Chơi Game
-                     <input type="checkbox"name="hobbies">Điện Ảnh<br>
-                     <input type="checkbox"name="hobbies">Du Lịch</th>
+                 <td class="info" >Sở thích</td>
+                  <td  class="hobbies" >
+                 <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox"> Thể Thao
+                        </td>
+                        <td>
+                            <input type="checkbox"> Âm Nhạc
+                        </td>
+                        <td>
+                            <input type="checkbox"> Đọc Sách
+                        </td>
+                    </tr>
+                     <tr>
+                         <td>
+                             <input type="checkbox"> Lướt Web
+                         </td>
+                         <td>
+                             <input type="checkbox"> Chơi Game
+                         </td>
+                         <td>
+                             <input type="checkbox"> Điện Ảnh
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>
+                             <input type="checkbox"> Du Lịch
+                         </td>
+                     </tr>
+
+                 </table>
+
+                 </td>
+
+
              </tr>
 
              <tr style="margin: 10px">
@@ -35,8 +64,7 @@
              <style>
                  .hobbies{
                      color: red;
-                     text-align: left;
-                     width: 300px;
+
                      padding: 0;
                  }
                  .info{
