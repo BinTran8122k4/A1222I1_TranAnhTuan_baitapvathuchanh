@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng Dụng Máy Tính</title>
+</head>
+<body>
+<input type="number" id="nhap1">
+<input type="number" id="nhap2">
+<button type="button" onclick="cong()" id="addition">Addition(+)</button>
+<button type="button" onclick="tru()" id="subtraction">Subtraction(-)</button>
+<button type="button" onclick="nhan()" id="multiplication">Multiplication(X)</button>
+<button type="button" onclick="chia()" id="division">Division(/)</button>
+<p id="kq"></p>
+<script>
+    function cong() {
+        let cong2 = document.getElementById('nhap1').value;
+        let cong3 = document.getElementById('nhap2').value;
+        let result = parseInt(cong2) + parseInt(cong3);
+        document.getElementById('kq').innerText = "Result:" + result;
+    }
+    function tru() {
+        let cong2 = document.getElementById('nhap1').value;
+        let cong3 = document.getElementById('nhap2').value;
+        let result = parseInt(cong2) - parseInt(cong3);
+        document.getElementById('kq').innerText = "Result:" + result;
+    }
+    function nhan() {
+        let cong2 = document.getElementById('nhap1').value;
+        let cong3 = document.getElementById('nhap2').value;
+        let result = parseInt(cong2) * parseInt(cong3);
+        document.getElementById('kq').innerText = "Result:" + result;
+    }
+    function chia() {
+        let cong2 = document.getElementById('nhap1').value;
+        let cong3 = document.getElementById('nhap2').value;
+        let result = parseInt(cong2) / parseInt(cong3);
+        document.getElementById('kq').innerText = "Result:" + result;
+    }
+</script>
+</body>
+</html>
