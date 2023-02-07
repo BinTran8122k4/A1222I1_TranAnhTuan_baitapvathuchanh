@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dá</title>
+</head>
+<body>
+<form>
+    <img id="myImage" src="" >
+    <p>Bấm Nút ở dưới để di chuyển bức ảnh sang phải </p>
+    <button type="button" id="nut" onclick="dichuyensangphai()" value="Click me"></button>
+</form>
+<script>
+    var imgOBJ = null;
+    imgOBJ = document.getElementById('myImage');
+
+    function init() {
+        imgOBJ = document.getElementById('myImage');
+        imgOBJ.style.position = 'relative';
+        imgOBJ.style.left = '0px';
+    }
+
+    function dichuyensangphai() {
+        imgOBJ.style.left = parseInt(imgOBJ.style.left) + 10 + 'px';
+    }
+
+    window.onload.init;
+</script>
+</body>
+</html>

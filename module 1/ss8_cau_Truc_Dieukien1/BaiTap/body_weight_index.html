@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chỉ số cân nặng cơ thể </title>
+</head>
+<body>
+<!--<input type="number" id="nhapcannang" placeholder="Nhập Cân Nặng">-->
+<!--<input type="number" id="nhapchieucao" placeholder="Nhập Chiều Cao">-->
+<!--<button type="button" value="Click Me" id="tinhToan" onclick="tinhtoan()">Click Me</button>-->
+<!--<p id="chisoBMI"></p>-->
+<!--<p id="result"></p>-->
+<script>
+    // function tinhtoan() {
+    //     let input = document.getElementById('nhapcannang').value;
+    //     let input2 = document.getElementById('nhapchieucao').value;
+    //     let pheptinh = input / (input2 * input2);
+    //     document.getElementById('chisoBMI').innerText = "Chỉ số BMI của bạn là:" + " " + pheptinh;
+    // }
+    // if (pheptinh <18.5) {
+    //     document.write("Underweight")
+    // }else if (pheptinh < 25.0 ){
+    //     document.write("Normal")
+    //
+    // }else if (pheptinh < 30.0 ){
+    //     document.write("Overweight")
+    // } else {
+    //     document.write("Obese")
+    // }
+    let cannang = +prompt('Nhập chỉ số cân nặng của bạn vào đây(kg):');
+    let chieucao = +prompt('Nhập chỉ số chiều cao của bạn vào đây (cm):');
+    let ketqua = cannang / (chieucao * chieucao);
+    if (ketqua < 18.5){
+        document.write('UnderWeight');
+    }else if (ketqua <25.0){
+        document.write('Normal');
+    }else if (ketqua < 30.0){
+        document.write('Overweight');
+    }else {
+        document.write('Obese');
+    }
+
+</script>
+</body>
+</html>
