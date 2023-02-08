@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính cước điện thoại</title>
+</head>
+<body>
+<script>
+    let baolau = +prompt("Bạn đã gọi bao lâu");
+    let cuocphi = baolau + 1;
+    if (cuocphi < 1 ){
+        alert("bạn không mất cước phí:");
+    }else if (baolau / baolau !== 1){
+        alert("bạn cần nhập một con số:");
+    } else {
+        alert("giá cước phí của bạn là:" + cuocphi);
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Lãi Xuất Ngân Hàng</title>
+</head>
+<body>
+<script>
+    let nhapsotienvay = prompt("Nhập số tiền vay:");
+    let nhapsothang = prompt("Nhập Số tháng vay:");
+    let sotienlai ="" ;
+    if (nhapsotienvay <= 5000){
+        sotienlai = (nhapsotienvay * 0.12)/12
+        alert("Số tiền lãi tháng này là:" + sotienlai)
+    }else if (nhapsotienvay <= 10000){
+        sotienlai = (nhapsotienvay * 0.08) /12
+        alert("Số tiền lãi tháng này là:" + sotienlai)
+    }else {
+        sotienlai = (nhapsotienvay * 0.05) /12
+        alert("số tiền lãi tháng này là:" +sotienlai )
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp Hạng Học Lực</title>
+</head>
+<body>
+<script>
+    let diemkiemtra = +prompt("Nhập Điểm Kiểm Tra");
+    let diemgiuaky = +prompt("Nhập Điểm Giữa Kỳ");
+    let diemcuoiky = +prompt("Nhập Điểm Cuối Kỳ");
+    let result = (diemkiemtra + diemgiuaky + diemcuoiky) / 3;
+    if (result <= 5.0){
+        alert("Điểm Của Bạn Là" + result + "Bạn Học Lực Trung Bình");
+    }else if (result < 7.0 ){
+        alert("Điểm Của Bạn Là" + result + "Bạn Học Lực Khá");
+    } else {
+        alert("Điểm Của Bạn Là" + result + "Bạn Học Lực Giỏi");
+    }
+</script>
+</body>
+</html>
