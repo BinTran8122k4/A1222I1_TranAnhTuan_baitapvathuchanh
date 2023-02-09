@@ -21,7 +21,7 @@
                 <button type="button" id="ba" onclick="hienthi3()">3</button>
             </th>
             <th>
-                <button type="button" id="cong" onclick="cong()">+</button>
+                <button type="button"  onclick="cong()" value="+">+</button>
             </th>
         </tr>
         <tr>
@@ -35,7 +35,7 @@
                 <button type="button" id="sau" onclick="hienthi6()">6</button>
             </th>
             <th>
-                <button type="button" id="tru" onclick="tru()">-</button>
+                <button type="button" onclick="tru()">-</button>
             </th>
         </tr>
         <tr>
@@ -49,7 +49,7 @@
                 <button type="button" id="chin" onclick="hienthi9()">9</button>
             </th>
             <th>
-                <button type="button" id="nhan" onclick="nhan()">x</button>
+                <button type="button"  onclick="nhan()">x</button>
             </th>
         </tr>
         <tr>
@@ -63,7 +63,7 @@
                 <button type="button" id="bang" onclick="tinhketqua()">=</button>
             </th>
             <th>
-                <button type="button" id="chia" onclick="chia()">/</button>
+                <button type="button"  onclick="chia()">/</button>
             </th>
         </tr>
     </table>
@@ -110,13 +110,33 @@
     }
 
     function cong() {
-        document.getElementById("thanhtinhtoan").value = "+" ;
+        document.getElementById("thanhtinhtoan").value += "+";
     }
 
     function xoa() {
         document.getElementById("thanhtinhtoan").value = "";
     }
-
+    function tru() {
+        document.getElementById("thanhtinhtoan").value += "-";
+    }
+function nhan() {
+    document.getElementById("thanhtinhtoan").value += "*";
+}
+function chia() {
+    document.getElementById("thanhtinhtoan").value += "/";
+}
+function tinhketqua() {
+     var p = document.getElementById('thanhtinhtoan').value;
+     var q= eval(p);
+     document.getElementById("thanhtinhtoan").value = q;
+}
 </script>
+<style>
+    button{
+        width: 30px;
+        height: 25px;
+        color: blue;
+    }
+</style>
 </body>
 </html>
