@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <h3>Nhập số tiền cần vay :</h3>
+    <input id="nhap" type="text">
+    <h3>vui chọn gói tháng vay :</h3>
+<div id="radio">
+    <input type="radio" id="r1" name="element"  checked value="3 tháng">3 tháng <br>
+    <input type="radio" id="r2" name="element" value="6 tháng">6 tháng <br>
+    <input type="radio" id="r3" name="element" value="9 tháng">9 tháng <br>
+    <input type="radio" id="r4" name="element" value="12 tháng">12 tháng<br>
+</div>
+    <button type="button" onclick="tinh()" style="margin-top: 10px">tính</button>
+</form>
+<p id="ketqua"></p>
+<script>
+
+    function tinh() {
+        let tinh = document.getElementById("nhap").value;
+       let radio = document.getElementById("radio").value;
+
+
+       document.getElementById('ketqua').innerText = "Số Tiền Vay:" + tinh + "Gói Vay:" + radio;
+
+    }
+</script>
+</body>
+</html>

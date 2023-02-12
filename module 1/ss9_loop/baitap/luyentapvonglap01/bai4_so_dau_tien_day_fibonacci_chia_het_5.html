@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>số đầu tiên của dãy Fibonacci chia hết cho 5</title>
+</head>
+<body>
+<script>
+    let f =0;
+    let f1 =1 ;
+    let f2;
+    let f3;
+    for (i = 0 ;i <= 100  ;i++ ){
+        f2 = f + f1;
+        f = f1 ;
+        f1 = f2;
+        if (f2 % 5 ==0){
+            document.write(f2 + "<br>")
+        }else {
+
+        }
+    }
+</script>
+</body>
+</html>
