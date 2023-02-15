@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập Lương Nhân Viên</title>
+</head>
+<body>
+<script>
+    let salary = +prompt("Nhập Lương Tháng Của Bạn vào đây");
+    let thue;
+    let realsalary;
+    if (salary >= 15000000){
+     thue = salary * 0.2;
+     realsalary = salary - thue;
+     document.write("Tiền Lương sau khi trừ thuế của bạn là " +realsalary);
+    }else if (7000000 <= salary < 15000000){
+        thue = salary * 0.1;
+        realsalary = salary - thue;
+        document.write("Tiền Lương sau khi trừ thuế của bạn là " +realsalary);
+    }else if (salary < 7000000){
+        thue = salary * 0.05;
+        realsalary = salary - thue;
+        document.write("Tiền Lương sau khi trừ thuế của bạn là " + realsalary);
+    }
+</script>
+</body>
+</html>

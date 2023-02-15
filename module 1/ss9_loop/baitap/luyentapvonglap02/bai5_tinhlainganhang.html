@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Lãi Ngân Hàng</title>
+</head>
+<body>
+<script>
+    let sotien = +prompt("Số Tiền Bạn Mượn:");
+    let T;
+    let r = 1.15 ;
+    let m = +prompt("Số Tháng Vay:");
+    for (n = 0 ;n <= m  ;n++){
+          T = sotien*Math.pow((r),n);
+          document.write("Tổng Tiền Phải Trả Tháng" + n + "Là:" + parseInt(T) + "<br>");
+    }
+</script>
+</body>
+</html>
