@@ -12,13 +12,16 @@
 <script>
     let vietnam =["xin chào" , "tạm biệt" , "hẹn gặp lại"];
     let english =["Hi" , "Byee" , "See ya later"];
+    let j =0;
     function searchtranslated() {
        let vocab = document.getElementById('search').value;
         for (let i = 0; i < vietnam.length ; i++) {
             if (vocab === vietnam[i]){
                 document.getElementById('exit').innerText = "Nghĩa của từ này tiếng anh là: " + english[i];
                 break;
-            }else {
+            }else
+                j++;
+                if (j === vietnam.length && j === english.length){
                 document.getElementById('notexit').innerText = "Không Tìm Thấy Từ Này";
             }
         }

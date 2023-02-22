@@ -8,12 +8,16 @@
 <script>
     let n = prompt("");
     let x = [n];
-    for (let i = 0; i < n ; i++) {
+    let a ;
+    for (let i = 0; i < n.length ; i++) {
+        x[i] = n.slice(i , i + 1 )
         if (x[i] === "-" ){
-            x.splice(i,1,"_")
-            document.write(x);
+            x[i] = "_";
         }
     }
+    document.write(x)
+
+
 
 </script>
 </body>

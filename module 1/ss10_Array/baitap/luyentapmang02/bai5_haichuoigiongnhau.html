@@ -7,28 +7,23 @@
 <body>
 <script>
     let n = prompt('Nhập chuỗi 1:');
-    let x = [n];
-     let b =   x.toString();
-    let n2 = prompt("Nhập Chuỗi 2:")
-    let x2 = [n2];
-     let b2 = x2.toString();
-    for (let i = 0 ; i < x.length ; i++){
-        let j2 = b2[i].slice(i , i+ b2.length);
-        let j = b[i].slice(i, i + b2.length);
-        if (j2 === j){
-            document.write("Giống Nhau")
-        }else {
-            document.write("Không Giống Nhau")
+    let n2 = prompt("Nhập Chuỗi 2:");
+    let flag = true;
+    if (n.length !== n2.length) {
+        flag = false;
+        document.write("2 Chuỗi Khác Nhau");
+    } else {
+        for (let i = 0; i < n.length; i++) {
+         if (n[i] !== n2[i]){
+             flag = false;
+             document.write("2 chuỗi khác nhau")
+             break;
+         }
         }
-
-            // if (b2[i + j] == b[i + j ] ){
-            //     document.write("Giống nhau:");
-            // }else {
-            //     document.write("Không Giống nhau:")
-            // }
-
     }
-
+    if (flag === true) {
+        document.write("2 chuỗi giống nhau");
+    }
 </script>
 </body>
 </html>
