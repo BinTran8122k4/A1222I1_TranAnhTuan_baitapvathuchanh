@@ -6,19 +6,17 @@
 </head>
 <body>
 <script>
-    for (let i = 0; i < 5 ; i++) {
-        for (let j = 0; j <= i ; j++) {
-          if (j == 1 && i == 2 ){
-              document.write("&nbsp");
-          }
-        }else if (i == 3 && j == 1){
-            document.write("&nbsp")
-        }else if (j <= i ){
-              document.write("*");
-
+    for (let i = 0; i < 5; i++) {
+        for (let j = 0; j <= i; j++) {
+            if (j == 1 && i == 2 && i == 3 && j == 1) {
+                document.write("&nbsp");
+            } else if (j <= i) {
+                document.write("*" + "<br>");
+            }
         }
-        document.write("<br>");
     }
+
+
 </script>
 </body>
 </html>
