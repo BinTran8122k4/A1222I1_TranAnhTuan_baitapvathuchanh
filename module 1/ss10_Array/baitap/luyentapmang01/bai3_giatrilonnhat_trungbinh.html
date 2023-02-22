@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm Giá Trị lớn Nhất và TÍnh Trung Bình</title>
+</head>
+<body>
+<script>
+    let x = [4,2,3,10,11,23,6,7,8,12];
+    let max = x[0];
+    let sum = 0;
+    for (let i = 0; i < x.length ; i++) {
+        if (x[i] > max){
+            max = x[i];
+        }
+     }
+    for (const i of x) {
+        sum += i;
+    }
+    sum = sum / x.length
+    document.write("Giá Trị Lớn Nhất Trong Mảng là:" + max + "<br>")
+    document.write("Trung bình cộng của mảng là:" + sum);
+</script>
+</body>
+</html>

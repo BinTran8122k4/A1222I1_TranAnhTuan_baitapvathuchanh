@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Xem 2 Chuỗi Có Giống Nhau Hay Không</title>
+</head>
+<body>
+<script>
+    let n = prompt('Nhập chuỗi 1:');
+    let x = [n];
+     let b =   x.toString();
+    let n2 = prompt("Nhập Chuỗi 2:")
+    let x2 = [n2];
+     let b2 = x2.toString();
+    for (let i = 0 ; i < x.length ; i++){
+        let j2 = b2[i].slice(i , i+ b2.length);
+        let j = b[i].slice(i, i + b2.length);
+        if (j2 === j){
+            document.write("Giống Nhau")
+        }else {
+            document.write("Không Giống Nhau")
+        }
+
+            // if (b2[i + j] == b[i + j ] ){
+            //     document.write("Giống nhau:");
+            // }else {
+            //     document.write("Không Giống nhau:")
+            // }
+
+    }
+
+</script>
+</body>
+</html>

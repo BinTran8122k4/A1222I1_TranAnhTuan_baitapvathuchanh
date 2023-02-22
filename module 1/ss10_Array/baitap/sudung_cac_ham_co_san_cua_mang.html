@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // bài tập 1
+    let myColor = ["Red", "Green", "White", "Black"];
+    myColor.join( "," );
+    document.write('"' + myColor + '"');
+    //bài tập 2
+    let a = [6,2,3,4,5,6,8];
+    for (let i = 0; i < a.length ; i++) {
+        if (a[i] % 2 === 0 && a[i - 1 ] % 2 === 0 ){
+            a.splice(i,0,"-");
+        }
+    }
+    document.write(a.join(""));
+    // Bải tập 3:
+    let n = prompt("Nhập một chuỗi vào đây");
+    let x = [];
+    let a = "";
+    for (let i of n) {
+        if (i == i.toLowerCase()) {
+            a = a + i.toUpperCase();
+        } else {
+            a = a + i.toLowerCase();
+        }
+    }
+    document.write(a);
+</script>
+</body>
+</html>

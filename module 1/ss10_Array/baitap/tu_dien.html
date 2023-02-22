@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ Điển Anh Việt</title>
+</head>
+<body>
+<input id="search" type="text">
+<button id="nut" onclick="searchtranslated()">Tìm Kiếm</button>
+<p id="exit"></p>
+<p id="notexit"></p>
+<script>
+    let vietnam =["xin chào" , "tạm biệt" , "hẹn gặp lại"];
+    let english =["Hi" , "Byee" , "See ya later"];
+    function searchtranslated() {
+       let vocab = document.getElementById('search').value;
+        for (let i = 0; i < vietnam.length ; i++) {
+            if (vocab === vietnam[i]){
+                document.getElementById('exit').innerText = "Nghĩa của từ này tiếng anh là: " + english[i];
+                break;
+            }else {
+                document.getElementById('notexit').innerText = "Không Tìm Thấy Từ Này";
+            }
+        }
+    }
+
+</script>
+</body>
+</html>
