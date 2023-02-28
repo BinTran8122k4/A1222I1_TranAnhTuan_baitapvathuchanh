@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích , tính chu vi</title>
+</head>
+<body>
+<select id="selected">
+    <option value="1" id="dientich">Diện Tích</option>
+    <option value="2" id="chuvi">Chu Vi</option>
+</select>
+<p id="result"></p>
+<button id="bam" onclick="displayresult()">Click Me To Calculate</button>
+<script>
+    let banKinh = +prompt("Nhập Bán Kính Hình Tròn:")
+    let pi = 3.14;
+    let chosse = document.getElementById('selected').value;
+    let result;
+    function displayresult() {
+      if (chosse == 1){
+           result = (banKinh * banKinh) * pi;
+           document.getElementById('result').innerText = "Diện tích hình tròn là:" + result;
+      }
+      else if (chosse == 2){
+         result =  2 * banKinh * pi;
+          document.getElementById('result').innerText = "Chu Vi Hình Tròn Là:" + result;
+      }
+    }
+</script>
+</body>
+</html>

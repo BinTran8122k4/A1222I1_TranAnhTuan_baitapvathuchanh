@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ Tam Giác Cân</title>
+</head>
+<body>
+<script>
+    let h = +prompt("Chiều Cao")
+    for (let i = h ; i >= h  ; i--) {
+        for (let j = 0; j <= h ; j++) {
+            document.write("&nbsp");
+        }
+        for (let k = h; k <= i  ; k--) {
+            document.write("*");
+        }
+        document.write("<br>")
+    }
+</script>
+</body>
+</html>

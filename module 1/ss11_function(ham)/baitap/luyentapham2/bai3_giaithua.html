@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Giai Thừa</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập Số Nguyên");
+    let giaithua = 1;
+    function tinhgiaithua() {
+        for (let i = 1; i <= n ; i++) {
+            giaithua *= i;
+        }
+        document.write(giaithua)
+    }
+    tinhgiaithua();
+</script>
+</body>
+</html>

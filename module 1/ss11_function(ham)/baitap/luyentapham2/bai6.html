@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập vào Kiểm tra phải số nguyên dương hay không</title>
+</head>
+<body>
+<input id="input" type="number">
+<button id="check" onclick="check()">Click Me!</button>
+<script>
+ function check() {
+     let checkNumber = +document.getElementById('input').value;
+       if (checkNumber >= 0 ){
+         document.write(true);
+       }else if (checkNumber < 0 ){
+           document.write(false);
+       }
+ }
+ check();
+</script>
+</body>
+</html>

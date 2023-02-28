@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check() {
+        let n = prompt();
+        let a = ["1","2","c","4","d","a","4","c"];
+        let b = 0;
+        for (let i = 0; i < a.length ; i++) {
+              if (n == a[i] && a.indexOf(n) !== -1){
+                b++;
+              }else {
+              }
+        }
+        document.write("Số Lần Xuất Hiện của Ký TỰ " + n +"là "+  b + " Lần");
+
+    }
+    check();
+</script>
+</body>
+</html>

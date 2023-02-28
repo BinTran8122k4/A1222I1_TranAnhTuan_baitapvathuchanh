@@ -6,14 +6,16 @@
 </head>
 <body>
 <script>
-    for (let i = 0; i < 5; i++) {
-        for (let j = 0; j <= i; j++) {
-            if (j == 1 && i == 2 && i == 3 && j == 1) {
-                document.write("&nbsp");
-            } else if (j <= i) {
-                document.write("*" + "<br>");
+    let h = +prompt("Chiều cao của tam giác")
+    for (let i = 0; i < h; i++) {
+        for (let j = 0; j < h; j++) {
+            if (j === 0 || j === h || j === i || i === h || i === h - 1) {
+                document.write("*");
+            }else {
+                document.write("&nbsp&nbsp")
             }
         }
+        document.write("<br>");
     }
 
 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm Tra Số Nguyên Tố</title>
+</head>
+<body>
+<script>
+
+    let n = +prompt("Nhập Một Số Nguyên Bất kì xem có phải primeNumber hay không:");
+    let flag = true;
+    function primeNumber() {
+            if (n >= 2 && n % 1 == 0 && n % n == 0 && n % 2 !== 0 && n % 3 !== 0 && n % 5 !== 0 && n % 7 !== 0) {
+                document.write(n + ' là số Nguyên tố')
+                flag = false;
+            } else if (n == 2 || n == 3 || n == 5 || n == 7) {
+                document.write(n + ' là số nguyên tố');
+                flag = false;
+            }else if (flag == true){
+                document.write(n + " Không phải là số nguyên tố")
+            }
+    }
+    primeNumber();
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập 3 số nguyên , trả về số nguyên nhỏ nhất</title>
+</head>
+<body>
+<button onclick="min(n1,n2,n3)" id="min">Click Me!</button>
+<p id="result">
+</p>
+<script>
+    let n = +prompt("Nhập Số Nguyên thứ nhất:")
+    let n2 = +prompt("Nhập Số Nguyên thứ hai:")
+    let n3 = +prompt("Nhập Số Nguyên thứ ba:")
+    function min(num1,num2,num3) {
+        if (num1 < num2 && num1 < num3){
+         document.write(num1 + "Là Số Nguyên Nhỏ Nhất");
+        }else if (num2 < num3 && num2 < num3){
+            document.write(num2 + "Là Số Nguyên Nhỏ Nhất");
+        }else if (num3 < num2 && num3 < num1){
+            document.write(num3 +"Là Số Nguyên Nhỏ Nhất");
+        }
+    }
+    min(n,n2,n3);
+</script>
+</body>
+</html>
