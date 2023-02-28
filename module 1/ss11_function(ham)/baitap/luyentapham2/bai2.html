@@ -14,9 +14,10 @@
 <script>
     let banKinh = +prompt("Nhập Bán Kính Hình Tròn:")
     let pi = 3.14;
-    let chosse = document.getElementById('selected').value;
+
     let result;
     function displayresult() {
+        let chosse = document.getElementById('selected').value;
       if (chosse == 1){
            result = (banKinh * banKinh) * pi;
            document.getElementById('result').innerText = "Diện tích hình tròn là:" + result;
