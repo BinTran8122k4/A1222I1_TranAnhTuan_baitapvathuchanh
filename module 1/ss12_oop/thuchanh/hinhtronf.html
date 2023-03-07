@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let pi = 3.14
+
+    class Circle {
+        constructor(radius, color) {
+            this.radius = radius;
+            this.color = color;
+        }
+
+        getRadius() {
+            return this.radius;
+
+        }
+        setRadius(newRadius){
+            this.radius = newRadius;
+        }
+
+        getArea() {
+            return Math.PI * this.radius * this.radius;
+        }
+
+        getInfor() {
+            alert("Radius:" + this.radius + "Area:" + this.getArea())
+        }
+
+    }
+
+    let n = +prompt("Nhập Bán Kính Hình Tròn:")
+    let circle = new Circle(n);
+    circle.setRadius(7);
+    circle.getInfor();
+
+</script>
+</body>
+</html>

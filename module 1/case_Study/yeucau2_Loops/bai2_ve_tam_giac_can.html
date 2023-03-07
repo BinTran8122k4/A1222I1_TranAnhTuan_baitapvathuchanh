@@ -7,11 +7,11 @@
 <body>
 <script>
     let h = +prompt("Chiều Cao")
-    for (let i = h ; i >= h  ; i--) {
-        for (let j = 0; j <= h ; j++) {
+    for (let i = 1 ; i <= h  ; i+=2) {
+        for (let j = h; j >= i ; j--) {
             document.write("&nbsp");
         }
-        for (let k = h; k <= i  ; k--) {
+        for (let k = 1  ; k <= i  ; k++) {
             document.write("*");
         }
         document.write("<br>")

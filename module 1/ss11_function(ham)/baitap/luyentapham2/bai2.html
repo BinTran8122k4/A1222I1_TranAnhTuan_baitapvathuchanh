@@ -16,16 +16,16 @@
     let pi = 3.14;
 
     let result;
+
     function displayresult() {
         let chosse = document.getElementById('selected').value;
-      if (chosse == 1){
-           result = (banKinh * banKinh) * pi;
-           document.getElementById('result').innerText = "Diện tích hình tròn là:" + result;
-      }
-      else if (chosse == 2){
-         result =  2 * banKinh * pi;
-          document.getElementById('result').innerText = "Chu Vi Hình Tròn Là:" + result;
-      }
+        if (chosse == 1) {
+            result = (banKinh * banKinh) * pi;
+            document.getElementById('result').innerText = "Diện tích hình tròn là:" + result;
+        } else if (chosse == 2) {
+            result = 2 * banKinh * pi;
+            document.getElementById('result').innerText = "Chu Vi Hình Tròn Là:" + result;
+        }
     }
 </script>
 </body>

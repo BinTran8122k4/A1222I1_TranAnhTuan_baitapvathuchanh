@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phân Số Lớn Nhất</title>
+</head>
+<body>
+<script>
+    let numeratorsLength =  +prompt("Input Length of numerators: ")
+    let denominatorsLength = +prompt("Input Length of denominators: ")
+    let numerators =[];
+    let denominators =[];
+    for (let i = 0; i < numeratorsLength ; i++) {
+            let n = +prompt("Nhập Tử Số:");
+            numerators[i] = n;
+
+    }
+    document.write(numerators)
+    document.write("<br>")
+    for ( i = 0; i < denominatorsLength ; i++) {
+          let m = +prompt("Nhập Mẫu Số:");
+          denominators[i] = m;
+
+    }
+    document.write(denominators)
+    document.write("<br>")
+    let sum;
+    let result = [];
+    for (let i = 0; i < numeratorsLength ; i++) {
+           sum = numerators[i] / denominators[i];
+        result.push(sum)
+        document.write(numerators[i] + "/" + denominators[i] + " = "+ sum + '<br>' )
+    }
+    let max = 0;
+    for (let i = 0; i < numeratorsLength; i++) {
+        if (max < result[i]) {
+            max = result[i];
+        }
+    }
+    document.write("Phân Số Lớn Nhất là :" + max)
+
+</script>
+</body>
+</html>

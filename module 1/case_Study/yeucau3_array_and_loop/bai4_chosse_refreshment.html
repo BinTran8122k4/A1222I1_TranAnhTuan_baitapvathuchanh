@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+<input id="nhap">
+<button type="button" id="tinhtoan" onclick="menu()">Click Me!</button>
+<br>
+<script>
+    // let menu = [
+    //     {
+    //         select:1,
+    //         name: "Cafe",
+    //         price: 15,
+    //
+    //     },
+    //     {
+    //         select:2,
+    //         name: "Cam Vắt",
+    //         price: 20,
+    //
+    //     },
+    //     {
+    //         select:3,
+    //         name: "Nước Ép Cà Rốt",
+    //         price: 18,
+    //
+    //     },
+    //     {
+    //         select:4,
+    //         name: "Nước Ép Cà Chua",
+    //         price: 17,
+    //
+    //     },
+    //     {
+    //         select:5,
+    //         name: "Nước Lọc",
+    //         price: 2,
+    //
+    //     },
+    //     {
+    //         select:6,
+    //         name: "nước dừa",
+    //         price: 20,
+    //
+    //     },
+    //     {
+    //         select:7,
+    //         name: "Thoát Menu",
+    //     }
+    // ]
+
+    let menuRefreshment = ["1.Cafe" + "<br>" + "2.Cam Vắt" + "<br>" + "3.Nước ép cà rốt" + "<br>" + "4.Nước ép cà chua" + "<br>" + "5.nước lọc" + "<br>" + "6.nước dừa" + "<br>" + "7.Thoát Menu"]
+    document.write(menuRefreshment);
+    function menu() {
+        let soluong;
+        do {
+            let n = +prompt("Nhập:");
+            switch (n) {
+                case 1:
+                    alert("Cafe Price:" + 15);
+                    soluong = +prompt("Nhập Số Lượng Bạn Muốn Mua: ")
+                    break;
+                case 1:
+                    alert("Cafe Price:" + 15);
+                    soluong = +prompt("Nhập Số Lượng Bạn Muốn Mua: ")
+                    break;
+                case 1:
+                    alert("Cafe Price:" + 15);
+                    soluong = +prompt("Nhập Số Lượng Bạn Muốn Mua: ")
+                    break;
+                case 1:
+                    alert("Cafe Price:" + 15);
+                    soluong = +prompt("Nhập Số Lượng Bạn Muốn Mua: ")
+                    break;
+                case 1:
+                    alert("Cafe Price:" + 15);
+                    soluong = +prompt("Nhập Số Lượng Bạn Muốn Mua: ")
+                    break;
+                case 1:
+                    alert("Cafe Price:" + 15);
+                    soluong = +prompt("Nhập Số Lượng Bạn Muốn Mua: ")
+                    break;
+                case 7:
+                    alert("Cafe Price:" + 15);
+                    soluong = +prompt("Nhập Số Lượng Bạn Muốn Mua: ")
+                    break;
+
+            }
+        } while (n == 7)
+
+    }
+
+
+
+</script>
+</body>
+</html>

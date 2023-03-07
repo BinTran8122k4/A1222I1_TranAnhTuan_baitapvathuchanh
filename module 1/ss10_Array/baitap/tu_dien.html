@@ -8,7 +8,6 @@
 <input id="search" type="text">
 <button id="nut" onclick="searchtranslated()">Tìm Kiếm</button>
 <p id="exit"></p>
-<p id="notexit"></p>
 <script>
     let vietnam =["xin chào" , "tạm biệt" , "hẹn gặp lại"];
     let english =["Hi" , "Byee" , "See ya later"];
@@ -22,7 +21,7 @@
             }else
                 j++;
                 if (j === vietnam.length && j === english.length){
-                document.getElementById('notexit').innerText = "Không Tìm Thấy Từ Này";
+                document.getElementById('exit').innerText = "Không Tìm Thấy Từ Này";
             }
         }
     }

@@ -6,34 +6,14 @@
 </head>
 <body>
 <script>
-    let str1 = prompt("Nhập vào chuỗi thứ nhất");
-    let str2 = prompt("Nhập vào chuỗi thứ hai");
-    let str1Arr = [];
-    let str2Arr = [];
-    let count = 0;
-    for (let i = 0; i <str1.length ; i++) {
-        str1Arr[i]=str1.slice(i,i+1);
-    }
-    document.write(str1Arr);
-    for (let j = 0; j <str2.length ; j++) {
-        str2Arr[j]=str2.slice(j,j+1);
-    }
-    document.write(str2Arr);
-    if((str1.length)!==(str2.length)){
-        document.write("Hai chuỗi không giống nhau");
-    }else {
-        for (let i = 0; i < str1Arr.length; i++) {
-            if (str1Arr[i] === str2Arr[i]) {
-               count++;
-            }
+    function func1(a){
+        if(a == 2) {
+            return 2;
+            return a * func1(a - 1);
+            document.write(a)
         }
     }
-    document.write(count);
-
-    if (count === (str1Arr.length)) {
-        document.write("Hai chuỗi giống nhau");
-    }document.write("Hai chuỗi không giống nhau");
-
+func1(5);
 </script>
 
 </body>
