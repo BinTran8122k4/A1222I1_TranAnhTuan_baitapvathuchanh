@@ -15,11 +15,11 @@
 <script>
     let h = +prompt("Chiều Cao")
     for (let i = 1 ; i <= h  ; i++) {
-        for (let j = 1; j <= 2*h-i; j++) {
+        for (let j = 1; j <=h+i; j++) {
             if (i==h||j==h-i+1||j==h+i-1){
                 document.write("*");
             }else {
-                document.write("&nbsp");
+                document.write("&nbsp;&nbsp");
             }
         }
         document.write("<br>");

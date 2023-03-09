@@ -26,11 +26,11 @@
     document.write("<br>");
 
     for (let i = 0; i < bLengArr ; i++) {
-            if (b.indexOf(a[i]) == -1){
-                b.splice(i,1)
+            if (a.indexOf(b[i]) === -1 && c.indexOf(b[i] )=== -1){
                 c.push(b[i]);
             }
         }
+
     document.write("Missing Value:" + c);
 
 

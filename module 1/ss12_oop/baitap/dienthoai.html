@@ -7,7 +7,7 @@
 <body>
 <script>
     class Mobile {
-        constructor(battery, dangsoanthao, hopthuden, tinnhandagui, status) {
+        constructor(battery, status) {
             if (battery > 0 && battery <= 100) {
                 this.battery = battery;
             }
@@ -34,8 +34,19 @@
         soantinnhan() {
             if (this.status === 1) {
                 this.dangsoanthao = prompt("Nhập Tin Nhắn Bạn Muốn Gửi")
-                this.hopthuden.push(this.dangsoanthao);
+                this.sendMessage(this.dangsoanthao);
                 this.battery--;
+            }
+        }
+        sendMessage(message){
+            let choose = prompt("ban muon gui cho ai? \n" +
+                "1. nokia" +
+                "2. iphone ")
+            if(choose == 1) {
+                console.log("come here")
+                nokia.receiveMessage(message);
+            } else {
+                iphone.receiveMessage(message);
             }
         }
         dagui()
@@ -43,7 +54,9 @@
             console.log("tin nhắn đã gửi có:" + this.hopthuden);
             this.battery--;
         }
-
+        receiveMessage(message){
+            this.hopthuden.push(message);
+        }
         hopthuden1() {
             if (this.status === 1) {
                 console.log("Hộp thư của bạn có " + this.hopthuden.length + "Tin nhắn mới là:"+ " " + this.hopthuden);
@@ -52,12 +65,12 @@
         }
     }
 
-    let iphone = new Mobile(26, 'on');
-    let nokia = new Mobile(36, 'on');
-    iphone.chargeBattery();
+    let iphone = new Mobile(26, 1);
+    let nokia = new Mobile(36, 1);
+    // iphone.chargeBattery();
     iphone.onStatus();
-    iphone.soantinnhan();
-    iphone.soantinnhan();
+    // iphone.soantinnhan();
+    // iphone.soantinnhan();
     iphone.soantinnhan();
     iphone.hopthuden1();
     iphone.dagui();

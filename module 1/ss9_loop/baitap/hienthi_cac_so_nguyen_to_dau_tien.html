@@ -6,22 +6,39 @@
 </head>
 <body>
 <script>
-    let num = +prompt("Nhập số lượng số nguyên tố cần in ra:");
-    let N = 2;
-    let test;
-
-    for (let N = 2 , cons = 0; cons <= num ; cons++){
-        if (N < 2 ) {
-            false;
-        }else if (N >= 2 && N % 1 == 0 && N % N == 0 && N % 2 !==0 && N % 3 !==0 && N % 5 !==0 && N % 7 !==0){
-            document.write(N + "<br>");
-        }else if (N == 2 || N == 3 || N == 5 || N ==7 ){
-            document.write(N + "<br>")
-        }
-
-        N++;
-
+    // function isPrime(n) {
+    //     for (let i = 2; i < n ; i++) {
+    //         if (n % i === 0){
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
+    // let count = 0;
+    // let num = 2;
+    // while (count <= 20){
+    //     if (isPrime(num) === true){
+    //         count++
+    //         console.log(num);
+    //     }
+    //     num++;
+    // }
+    let flag = true;
+    let n = +prompt("Nhap so")
+    if(n < 2 ){
+        flag = false;
     }
+    for (let i = 2; i <= Math.sqrt(n) ; i++) {
+        if (n % i == 0){
+            flag = false;
+        }
+    }
+    if(flag == true){
+        document.write(n + " la so nguyen to")
+    }else {
+        document.write("ko")
+    }
+
 </script>
 </body>
 </html>
