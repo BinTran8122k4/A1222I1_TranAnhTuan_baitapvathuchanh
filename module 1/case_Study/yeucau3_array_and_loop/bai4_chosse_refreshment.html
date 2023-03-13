@@ -5,92 +5,66 @@
     <title>Menu</title>
 </head>
 <body>
-<input id="nhap">
-<button type="button" id="tinhtoan" onclick="menu()">Click Me!</button>
+<button type="button" id="tinhtoan" onclick="menu()">Click Me To Oder Refreshment!</button>
 <br>
 <script>
-    // let menu = [
-    //     {
-    //         select:1,
-    //         name: "Cafe",
-    //         price: 15,
-    //
-    //     },
-    //     {
-    //         select:2,
-    //         name: "Cam Vắt",
-    //         price: 20,
-    //
-    //     },
-    //     {
-    //         select:3,
-    //         name: "Nước Ép Cà Rốt",
-    //         price: 18,
-    //
-    //     },
-    //     {
-    //         select:4,
-    //         name: "Nước Ép Cà Chua",
-    //         price: 17,
-    //
-    //     },
-    //     {
-    //         select:5,
-    //         name: "Nước Lọc",
-    //         price: 2,
-    //
-    //     },
-    //     {
-    //         select:6,
-    //         name: "nước dừa",
-    //         price: 20,
-    //
-    //     },
-    //     {
-    //         select:7,
-    //         name: "Thoát Menu",
-    //     }
-    // ]
-
     let menuRefreshment = ["1.Cafe" + "<br>" + "2.Cam Vắt" + "<br>" + "3.Nước ép cà rốt" + "<br>" + "4.Nước ép cà chua" + "<br>" + "5.nước lọc" + "<br>" + "6.nước dừa" + "<br>" + "7.Thoát Menu"]
     document.write(menuRefreshment);
     function menu() {
+        let n;
         let soluong;
+        let result = 0;
+        let price;
         do {
-            let n = +prompt("Nhập:");
+             n = +prompt("Nhập:");
             switch (n) {
                 case 1:
-                    alert("Cafe Price:" + 15);
+                    price = 15;
+                    alert("Cafe Price:" + price);
                     soluong = +prompt("Nhập Số Lượng Bạn Muốn Mua: ")
+                    result += price * soluong;
+                    alert("Tổng Tiền Của Bạn Là:" + result);
                     break;
-                case 1:
-                    alert("Cafe Price:" + 15);
+                case 2:
+                    price = 25
+                    alert("Cam Vắt Price:" + price );
                     soluong = +prompt("Nhập Số Lượng Bạn Muốn Mua: ")
+                    result += price * soluong;
+                    alert("Tổng Tiền Của Bạn Là:" + result);
                     break;
-                case 1:
-                    alert("Cafe Price:" + 15);
+                case 3:
+                    price = 23;
+                    alert("Nước Ép Cà Rốt Price:" + price );
                     soluong = +prompt("Nhập Số Lượng Bạn Muốn Mua: ")
+                    result += price * soluong;
+                    alert("Tổng Tiền Của Bạn Là:" + result);
                     break;
-                case 1:
-                    alert("Cafe Price:" + 15);
+                case 4:
+                    price = 23;
+                    alert("Nước Ép Cà Chua Price:" + price);
                     soluong = +prompt("Nhập Số Lượng Bạn Muốn Mua: ")
+                    result += price * soluong;
+                    alert("Tổng Tiền Của Bạn Là:" + result);
                     break;
-                case 1:
-                    alert("Cafe Price:" + 15);
+                case 5:
+                    price = 5
+                    alert("Nước Lọc Price:" + price);
                     soluong = +prompt("Nhập Số Lượng Bạn Muốn Mua: ")
+                    result += price * soluong;
+                    alert("Tổng Tiền Của Bạn Là:" + result);
                     break;
-                case 1:
-                    alert("Cafe Price:" + 15);
+                case 6:
+                    price = 25
+                    alert("Nước Dừa Price:" + price);
                     soluong = +prompt("Nhập Số Lượng Bạn Muốn Mua: ")
+                    result += price * soluong;
+                    alert("Tổng Tiền Của Bạn Là:" + result);
                     break;
                 case 7:
-                    alert("Cafe Price:" + 15);
-                    soluong = +prompt("Nhập Số Lượng Bạn Muốn Mua: ")
+                  alert("Đã Thoát Menu");
                     break;
-
             }
-        } while (n == 7)
-
+        } while (n < 7)
     }
 
 

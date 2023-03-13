@@ -11,7 +11,6 @@
     let a = [];
     let b = [];
     let c = [];
-    let d = [];
     for (let j = 0; j < aLengArr; j++) {
         let indexArra = +prompt("Nhập các số trong mảng a:");
         a[j] = indexArra;
@@ -24,13 +23,11 @@
     document.write("<br>");
     document.write(b);
     document.write("<br>");
-
     for (let i = 0; i < bLengArr ; i++) {
             if (a.indexOf(b[i]) === -1 && c.indexOf(b[i] )=== -1){
                 c.push(b[i]);
             }
         }
-
     document.write("Missing Value:" + c);
 
 

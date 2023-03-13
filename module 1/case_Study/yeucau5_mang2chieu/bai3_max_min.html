@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m = +prompt("Nhập Số Hàng:");
+    let n = +prompt("Nhập Số Cột:");
+    let arr = [];
+    for (let i = 0; i < m ; i++) {
+        arr[i] = []
+        for (let j = 0; j < n ; j++) {
+        arr[i][j] = Math.floor(Math.random() * 100);
+        }
+    }
+    console.log(arr)
+
+    function min(arr) {
+        let minNumber = arr[0][0];
+        for (let i = 0; i < arr.length ; i++) {
+            for (let j = 0; j < arr.length ; j++) {
+                   if (minNumber > arr[i][j]){
+                       minNumber = arr[i][j];
+                   }
+            }
+        }
+        return minNumber;
+    }
+    function max(arr) {
+ let maxNumber = arr[0][0];
+        for ( i = 0; i < arr.length ; i++) {
+            for ( j = 0; j < arr.length ; j++) {
+                if (maxNumber < arr[i][j]){
+                    maxNumber = arr[i][j];
+                }
+            }
+        }
+        return maxNumber;
+    }
+         console.log("Số Nhỏ Nhất Trong Mảng Là:" + min(arr));
+         console.log("Số Lớn Nhất Trong Mảng Là:" + max(arr));
+
+
+
+</script>
+</body>
+</html>
