@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <button onclick="deleteStudent(studentsList)">Xoá</button>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Mã Sinh Viên</th>
+            <th>Họ Và Tên</th>
+            <th>Lớp</th>
+            <th>Ngày Tháng Năm Sinh</th>
+            <th>Module</th>
+        </tr>
+        <tbody id="thongtinsv">
+
+        </tbody>
+    </table>
+</div>
+<script>
+    class Students {
+        constructor(id, name, clas, birth, module) {
+            this.id = id;
+            this.name = name;
+            this.clas = clas;
+            this.birth = birth;
+            this.module = module;
+        }
+    }
+
+    let student1 = new Students("HV-001", "Cristiano Ronaldo", "A1222CI1", "1/1/1986", "3");
+    let student2 = new Students("HV-002", "Cristiano Ronaldo", "A1222CI1", "1/1/1986", "5");
+    let student3 = new Students("HV-003", "Cristiano Ronaldo", "A1222CI1", "1/1/1986", "1");
+    let studentsList = [student1, student2, student3];
+    displayList(studentsList);
+
+    function displayList(studentsList) {
+        let table = "";
+        for (let i = 0; i < studentsList.length; i++) {
+            table += "<tr>" + "<th>" + studentsList[i].id + "</th>" +
+                "<th>" + studentsList[i].name + "</th>" +
+                "<th>" + studentsList[i].clas + "</th>" +
+                "<th>" + studentsList[i].birth + "</th>" +
+                "<th>" + studentsList[i].module + "</th>" + "</tr>"
+            document.getElementById('thongtinsv').innerHTML = table;
+        }
+    }
+
+    function deleteStudent(student) {
+        let n = prompt("Nhập Mã Sinh Viên Bạn Muốn Xoá:");
+        flag = false;
+        for (let i = 0; i < studentsList.length; i++) {
+            if (student[i].id === n) {
+                flag = true;
+                student .splice(i, 1)
+                displayList(student);
+            }
+        }
+        if (flag === false) {
+            alert("Không Tìm Thấy MÃ Sinh Viên Bạn Muốn Xoá:");
+        }
+    }
+</script>
+</body>
+</html>
